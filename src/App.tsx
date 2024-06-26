@@ -5,12 +5,14 @@ import {
   ScrollRestoration,
 } from "react-router-dom";
 
-import { useEffect } from "react";
 import { Home } from "./pages";
+import { useEffect } from "react";
+import { Navbar } from "./components";
 
 const Root = () => {
   return (
     <>
+      <Navbar />
       <ScrollRestoration />
       <Outlet />
     </>

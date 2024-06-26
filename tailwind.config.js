@@ -52,9 +52,8 @@ export default {
         "loader-opacity": "loader 1s ease-in-out alternate infinite",
       },
       fontFamily: {
-        aeonik: ["Aeonik", "sans-serif"],
-        aeonikBold: ["AeonikBold", "sans-serif"],
-        red: ["Red Hat Display", "sans-serif"],
+        kai: ["Kaisei Opti", "sans-serif"],
+        mar: ["Marcellus", "sans-serif"],
       },
     },
   },
