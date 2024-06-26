@@ -3,7 +3,6 @@ import {
   Outlet,
   RouterProvider,
   ScrollRestoration,
-  // useLocation,
 } from "react-router-dom";
 
 import { useEffect } from "react";
@@ -37,7 +36,7 @@ const router = createBrowserRouter([
 
 export default function App() {
   useEffect(() => {
-    // scroll()
+    scroll();
   }, []);
 
   return <RouterProvider router={router} />;
