@@ -11,7 +11,7 @@ export default function Hero() {
           your bank accounts, credit cards.
         </p>
       </div>
-      <button className="bg-[#2E5EFF] mt-[32px] px-[24px] py-[12px] rounded-[30px] text-white font-semibold leading-[22px] text-base ">
+      <button className="bg-[#2E5EFF] mt-[32px] px-[24px] py-[12px] rounded-[30px] text-white font-semibold leading-[22px] text-base transition-all duration-300 active:scale-95">
         Get Started Now
       </button>
 
@@ -21,6 +21,7 @@ export default function Hero() {
           alt="hero"
           draggable={false}
           loading="lazy"
+          className="transition-all duration-300 hover:scale-[0.98]"
         />
       </figure>
     </section>
