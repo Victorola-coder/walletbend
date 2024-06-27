@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <header>
       <nav className="mx-[18px] py-[21.33px] flex flex-row justify-between items-center">
-        <div>
+        <div className="flex flex-row gap-1.5">
           <figure>
             <img
               src="/images/logo.png"
@@ -39,6 +39,9 @@ export default function Navbar() {
               loading="lazy"
             />
           </figure>
+          <p className="text-[#000F40] font-mar text-[19.2px] leading-[24.08px] ">
+            WalletBend
+          </p>
         </div>
         {/* MOBILE NAV */}
         <div className="md:hidden" ref={navRef}>
