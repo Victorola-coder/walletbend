@@ -1,4 +1,4 @@
-import { Binance } from "./svgs";
+import { Binance, Bitcoin, Bitmex, Tether } from "./svgs";
 
 export default function Partner() {
   return (
@@ -14,6 +14,9 @@ export default function Partner() {
 
       <div className="flex flex-row items-center overflow-auto gap-[70px] py-[30px] animate-fade-in">
         <Binance />
+        <Bitcoin />
+        <Tether />
+        <Bitmex />
       </div>
     </section>
   );
