@@ -1,4 +1,4 @@
-import { Applestore, Playstore } from "./svgs";
+import { AppleStore, PlayStore } from "./svgs";
 
 export default function Footer() {
   return (
@@ -18,7 +18,19 @@ export default function Footer() {
         </p>
       </div>
       {/* app and google dowwnload */}
-      <div className="flex flex-row items-center justify-center mt-[24px] gap-[28.45px]"></div>
+      <div className="flex flex-row items-center justify-center mt-[24px] mb-[32px] gap-[28.45px]">
+        <AppleStore />
+        <PlayStore />
+      </div>
+      <figure>
+        <img
+          src="/images/app.png"
+          alt="walletbend_app_screenshot"
+          draggable={false}
+          loading="lazy"
+          className="object-cover"
+        />
+      </figure>
     </footer>
   );
 }

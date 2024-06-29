@@ -1,8 +1,14 @@
 import { useRef, useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+interface NavlinkProps {
+  title: string;
+  href: string;
+}
+
 export default function Navbar() {
   const [isOpened, setIsOpened] = useState<boolean>(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const navRef = useRef<any>(null);
 
   const handleClick = useCallback(
@@ -25,6 +31,29 @@ export default function Navbar() {
       window.removeEventListener("mousedown", handleClick);
     }
   }, [isOpened, handleClick]);
+
+  const navlinks: NavlinkProps[] = [
+    {
+      title: "Home",
+      href: "/",
+    },
+    {
+      title: "Features",
+      href: "/#features",
+    },
+    {
+      title: "Benefits",
+      href: "/#benefits",
+    },
+    {
+      title: "About Us",
+      href: "/#about-us",
+    },
+    {
+      title: "Log In",
+      href: "/login",
+    },
+  ];
 
   return (
     <header>
@@ -77,27 +106,24 @@ export default function Navbar() {
                 } pt-4 left-0 right-0`}
               >
                 <ul className="flex flex-col gap-[22px] items-center justify-center  mx-auto font-medium text-base tracking-tight text-center leading-[24px] font-sailmed text-dark">
-                  <li>
-                    <Link to="#features">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="#faqs">Features</Link>
-                  </li>
-                  <li>
-                    <Link to="#benefits">Benefits</Link>
-                  </li>
-                  <li>
-                    <Link to="#about">About Us</Link>
-                  </li>
-                  <li>
-                    <Link to="/login" replace>
-                      Log In
-                    </Link>
-                  </li>
+                  {navlinks.map((link, id) => (
+                    <li key={id}>
+                      <Link
+                        onClick={() => setIsOpened(!isOpened)}
+                        to={link.href}
+                        replace={link.href === "/login"}
+                      >
+                        {link.title}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
-                <Link to="/sign-up">
-                  <button className="mt-5 bg-[#2E5EFF] mx-auto block whitespace-nowrap w-[330px] text-[16px] py-[12px] md:py-[18px] leading-[33px] rounded-[12px] md:absolute md:top-2 md:bottom-2 md:right-[7.8px] text-center outline-none md:px-[37.74px] font-sailmed text-[#ffffff] md:text-[20px] md:w-[218px] font-medium md:leading-[25.65px] md:rounded-[35.942px]">
-                    download our app
+                <Link to="/signup">
+                  <button
+                    onClick={() => setIsOpened(!isOpened)}
+                    className="mt-5 bg-[#2E5EFF] mx-auto block whitespace-nowrap  text-[16px] px-[32px] py-[12px] md:py-[18px] leading-[33px] rounded-[12px] md:absolute md:top-2 md:bottom-2 md:right-[7.8px] text-center outline-none md:px-[37.74px] font-sailmed text-[#ffffff] md:text-[20px] md:w-[218px] font-medium md:leading-[25.65px] md:rounded-[35.942px]"
+                  >
+                    Download our App
                   </button>
                 </Link>
               </div>

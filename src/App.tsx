@@ -4,9 +4,8 @@ import {
   RouterProvider,
   ScrollRestoration,
 } from "react-router-dom";
-
-import { Home } from "./pages";
 import { useEffect } from "react";
+import { NotFound, Home } from "./pages";
 import { Navbar, Footer } from "./components";
 
 const Root = () => {
@@ -25,10 +24,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     children: [
-      // {
-      //   path: "*",
-      //   element: <NotFound/>
-      // },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
       {
         index: true,
         element: <Home />,
