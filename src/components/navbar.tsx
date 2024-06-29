@@ -58,7 +58,7 @@ export default function Navbar() {
   return (
     <header>
       <nav className="mx-[18px] py-[21.33px] flex flex-row justify-between items-center">
-        <div className="flex flex-row gap-1.5">
+        <div className="flex flex-row items-center gap-1.5">
           <figure>
             <img
               src="/images/logo.png"
@@ -105,7 +105,7 @@ export default function Navbar() {
                   isOpened ? "-translate-y-[50px]" : "-translate-y-[200%]"
                 } pt-4 left-0 right-0`}
               >
-                <ul className="flex flex-col gap-[22px] items-center justify-center  mx-auto font-medium text-base tracking-tight text-center leading-[24px] font-sailmed text-dark">
+                <ul className="flex flex-col gap-[22px] items-center justify-center  mx-auto font-medium text-base tracking-tight text-center leading-[24px] font-sailmed">
                   {navlinks.map((link, id) => (
                     <li key={id}>
                       <Link
