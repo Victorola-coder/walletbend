@@ -7,7 +7,7 @@ import {
 
 import { Home } from "./pages";
 import { useEffect } from "react";
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 
 const Root = () => {
   return (
@@ -15,6 +15,7 @@ const Root = () => {
       <Navbar />
       <ScrollRestoration />
       <Outlet />
+      <Footer />
     </>
   );
 };

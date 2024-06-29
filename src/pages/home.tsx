@@ -5,8 +5,9 @@ export default function Home() {
     <main>
       <Hero />
       <Partner />
-      connect your two or more bank account together and pay for transaction on
-      one app.
     </main>
   );
 }
+
+// connect your two or more bank account together and pay for transaction on
+// one app.
