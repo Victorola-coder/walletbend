@@ -92,14 +92,25 @@ export default function Footer() {
         </p>
       </div>
 
-      <div>
-        <ul className="flex flex-row gap-[32px] items-center justify-center  mx-auto font-medium text-base tracking-tight text-center leading-[24px] font-sailmed text-white">
+      <div className="py-[24px]">
+        <ul className="flex flex-row gap-[32px] items-center justify-center  mx-auto font-medium text-base tracking-tight text-center leading-[24px] text-white">
           {links.map((link, id) => (
             <li key={id}>
               <Link to={link.href}>{link.title}</Link>
             </li>
           ))}
         </ul>
+      </div>
+
+      {/* links */}
+      <div className="flex flex-row items-center justify-center">
+        {/* <Link className="w-fit" to="">
+          <FacebookIcon />
+        </Link> */}
+
+        <figure>
+          <img src="/images/facebook.svg" alt="facebook icon" />
+        </figure>
       </div>
     </footer>
   );

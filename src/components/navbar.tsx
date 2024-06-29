@@ -121,7 +121,7 @@ export default function Navbar() {
                 <Link to="/signup">
                   <button
                     onClick={() => setIsOpened(!isOpened)}
-                    className="mt-5 bg-[#2E5EFF] mx-auto block whitespace-nowrap  text-[16px] px-[32px] py-[12px] md:py-[18px] leading-[33px] rounded-[12px] md:absolute md:top-2 md:bottom-2 md:right-[7.8px] text-center outline-none md:px-[37.74px] font-sailmed text-[#ffffff] md:text-[20px] md:w-[218px] font-medium md:leading-[25.65px] md:rounded-[35.942px]"
+                    className="mt-5 bg-[#2E5EFF] mx-auto block whitespace-nowrap  text-[16px] px-[32px] py-[12px] md:py-[18px] leading-[33px] rounded-[12px] md:absolute md:top-2 md:bottom-2 md:right-[7.8px] text-center outline-none md:px-[37.74px] text-[#ffffff] md:text-[20px] md:w-[218px] font-medium md:leading-[25.65px] md:rounded-[35.942px]"
                   >
                     Download our App
                   </button>

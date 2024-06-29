@@ -533,7 +533,7 @@ export const InstagramIcon = ({ className }: SVGProps) => {
   );
 };
 
-export const XIcon = ()=>{
+export const XIcon = () => {
   return (
     <svg
       width="12"
@@ -552,5 +552,4 @@ export const XIcon = ()=>{
       />
     </svg>
   );
-
-}
+};
