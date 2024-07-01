@@ -103,13 +103,33 @@ export default function Footer() {
       </div>
 
       {/* links */}
-      <div className="flex flex-row items-center justify-center">
-        {/* <Link className="w-fit" to="">
-          <FacebookIcon />
-        </Link> */}
-
-        <figure>
-          <img src="/images/facebook.svg" alt="facebook icon" />
+      <div className="flex flex-row items-center justify-center gap-[32px]">
+        <figure className="w-[32px] h-[32px] rounded-full bg-white transition-all duration-300 flex flex-col items-center justify-center hover:bg-white/80 hover:text-white">
+          <img
+            src="/images/facebook.svg"
+            className="w-fit hover:text-white"
+            alt="facebook_icon"
+            draggable={false}
+            loading="lazy"
+          />
+        </figure>
+        <figure className="w-[32px] h-[32px] rounded-full bg-white transition-all duration-300 flex flex-col items-center justify-center hover:bg-white/80 hover:text-white">
+          <img
+            src="/images/instagram.svg"
+            className="w-fit hover:text-white"
+            alt="instagram_icon"
+            draggable={false}
+            loading="lazy"
+          />
+        </figure>
+        <figure className="w-[32px] h-[32px] rounded-full bg-white transition-all duration-300 flex flex-col items-center justify-center hover:bg-white/80 hover:text-white">
+          <img
+            src="/images/x.svg"
+            className="w-fit hover:text-white"
+            alt="x_icon"
+            draggable={false}
+            loading="lazy"
+          />
         </figure>
       </div>
     </footer>
