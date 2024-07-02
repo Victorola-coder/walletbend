@@ -98,3 +98,17 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-700%);
+  }
+}
+
+.animate-alternate {
+  animation: move infinite alternate;
+  animation-duration: 5s;
+}

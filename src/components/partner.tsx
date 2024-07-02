@@ -12,7 +12,7 @@ export default function Partner() {
         </p>
       </div>
 
-      <div className="flex flex-row items-center overflow-auto gap-[70px] py-[30px] animate-fade-in">
+      <div className="animate-alternate_  flex flex-row items-center overflow-auto gap-[70px] py-[30px] animate-fade-in">
         <Binance />
         <Bitcoin />
         <Tether />

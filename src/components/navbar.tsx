@@ -57,8 +57,8 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="mx-[18px] py-[21.33px] flex flex-row justify-between items-center">
-        <div className="flex flex-row items-center gap-1.5">
+      <nav className="md:mx-[120px] mx-[18px] py-[21.33px] flex flex-row justify-between items-center">
+        <Link to="/" className="flex flex-row items-center gap-1.5">
           <figure>
             <img
               src="/images/logo.png"
@@ -68,10 +68,31 @@ export default function Navbar() {
               loading="lazy"
             />
           </figure>
-          <p className="text-[#000F40] font-mar text-[19.2px] leading-[24.08px] ">
+          <p className="text-[#000F40] font-mar text-[19.2px] leading-[24.08px] md:text-[24px] md:leading-[30.09px] ">
             WalletBend
           </p>
+        </Link>
+
+        <div>
+          <ul className="hidden md:flex flex-row gap-[32px] items-center justify-center mx-auto font-medium text-[15px] text-[#80879F] tracking-tight text-center leading-[24px]">
+            {navlinks.map((link, id) => (
+              <li key={id}>
+                <Link
+                  onClick={() => setIsOpened(!isOpened)}
+                  to={link.href}
+                  replace={link.href === "/login"}
+                >
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
+
+        <button className="hidden md:block bg-[#2E5EFF] px-[24px] py-[12px] rounded-[30px] text-white font-semibold leading-[22px] text-base transition-all duration-300 active:scale-95">
+          Download Our App
+        </button>
+
         {/* MOBILE NAV */}
         <div className="md:hidden" ref={navRef}>
           <div className="">
@@ -105,7 +126,7 @@ export default function Navbar() {
                   isOpened ? "-translate-y-[50px]" : "-translate-y-[200%]"
                 } pt-4 left-0 right-0`}
               >
-                <ul className="flex flex-col gap-[22px] items-center justify-center  mx-auto font-medium text-base tracking-tight text-center leading-[24px] font-sailmed">
+                <ul className="flex flex-col gap-[22px] items-center justify-center  mx-auto font-medium text-base tracking-tight text-center leading-[24px]">
                   {navlinks.map((link, id) => (
                     <li key={id}>
                       <Link

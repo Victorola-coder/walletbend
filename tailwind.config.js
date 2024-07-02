@@ -54,6 +54,7 @@ export default {
       fontFamily: {
         kai: ["Kaisei Opti", "sans-serif"],
         mar: ["Marcellus", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
     },
   },
