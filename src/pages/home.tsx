@@ -1,10 +1,11 @@
-import { Hero, Partner } from "../components";
+import { Hero, Partner, Features } from "../components";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <Partner />
+      <Features />
     </main>
   );
 }
