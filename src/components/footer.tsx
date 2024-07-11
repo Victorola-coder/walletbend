@@ -23,7 +23,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="bg-[#2E5EFF] px-[24px] py-[32px] flex flex-col md:flex  md:flex-row md:items-center">
+    <footer className="bg-[#2E5EFF] px-[24px] py-[32px] flex flex-col md:flex md:flex-row md:items-center">
       <div>
         <figure>
           <img
