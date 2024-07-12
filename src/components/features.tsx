@@ -1,9 +1,4 @@
-interface CardProps {
-  img: string;
-  name: string;
-  date: string;
-  text: string;
-}
+import { Card } from "./card";
 
 export default function features() {
   return (
@@ -16,7 +11,7 @@ export default function features() {
           Financial Life, Simplified.
         </h1>
         <div className="flex flex-row items-center max-w-[434px] gap-[32px]">
-          <Cards
+          <Card
             img="/images/pena.png"
             name="Eleanor Pena"
             date="October 31, 2023"
@@ -29,36 +24,28 @@ export default function features() {
           />
         </div>
       </div>
+
+      {/* ---------------- */}
+      <div className="bg-[#EEF3FF] mx-[120px] my-[64px] rounded-[40px] p-[64px] flex flex-row items-center justify-between">
+        <div>
+          <h2 className="font-kai font-bold text-[40px] leading-[60px] tracking-tight text-black">
+            Link cards
+          </h2>
+          <h4 className="mt-4 font-lato max-w-[564px]">
+            <span className="font-bold text-[48px] leading-[48px] text-[#EEF3FF] bg-[#2E5EFF] rounded-[60px] py-[12px] px-[18px]">
+              10%
+            </span>
+            <span className="font-semibold text-[40px] leading-[60px]">
+              {" "}
+              discount on every card transaction
+            </span>
+          </h4>
+        </div>
+
+        <img src="/images/link.png" alt="link" draggable={false} />
+      </div>
+
+      {/* ------------------ */}
     </section>
   );
 }
-
-const Cards = ({ img, name, date, text }: CardProps) => {
-  return (
-    <div className="flex flex-col items-start bg-[#EEF3FF]  rounded-[15px] p-[24px]">
-      <div className="flex flex-row items-center gap-4">
-        <img
-          src={img}
-          alt={name}
-          draggable={false}
-          className="w-[50] h-[50px] rounded-full object-cover"
-        />
-        <div>
-          <p className="font-kai text-[#000F40] font-bold text-base leading-[24px]">
-            {name}
-          </p>
-          <p className="font-lato text-[#80879F] font-normal text-[12px] leading-[14px]">
-            {date}
-          </p>
-        </div>
-      </div>
-      <figure className="mt-4">
-        <img src="/images/rating.png" alt="rating" draggable={false} />
-      </figure>
-
-      <h4 className="font-lato text-[#80879F] text-[16px] leading-[24px] max-w-[386px ">
-        {text}
-      </h4>
-    </div>
-  );
-};
