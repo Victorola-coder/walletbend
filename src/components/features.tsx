@@ -26,7 +26,7 @@ export default function features() {
       </div>
 
       {/* ---------------- */}
-      <div className="bg-[#EEF3FF] mx-[120px] my-[64px] rounded-[40px] p-[64px] flex flex-row items-center justify-between">
+      <div className="bg-[#EEF3FF] mx-[120px] my-[64px] rounded-[40px] px-[64px] flex flex-row items-center justify-between">
         <div>
           <h2 className="font-kai font-bold text-[40px] leading-[60px] tracking-tight text-black">
             Link cards
@@ -40,6 +40,10 @@ export default function features() {
               discount on every card transaction
             </span>
           </h4>
+
+          <button className="bg-[#2E5EFF] mt-[32px] px-[24px] py-[12px] rounded-[30px] text-white font-semibold leading-[22px] text-base transition-all duration-300 active:scale-95">
+            Get Started
+          </button>
         </div>
 
         <img src="/images/link.png" alt="link" draggable={false} />
