@@ -6,7 +6,7 @@ export default function NotFound() {
     <>
       <SEO title="Page not found, pay $404 to access this page" />
       <div className="h-dvh flex flex-col justify-center items-center text-black text-center font-semibold text-xl">
-        You are not supposed to see this page due to legal reasons.
+        You are not supposed to see this page yet due to legal reasons.
         <p className="mt-1">
           Go to&nbsp;
           <span>
