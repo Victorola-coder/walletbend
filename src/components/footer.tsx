@@ -48,11 +48,11 @@ export default function Footer() {
         {/* image */}
         <figure className="my-[32px]">
           <img
-            src="/images/app.png"
+            src="/images/bend.png"
             alt="walletbend_app_screenshot"
             draggable={false}
             loading="lazy"
-            className="object-cover"
+            className="object-cover w-full"
           />
         </figure>
       </div>
