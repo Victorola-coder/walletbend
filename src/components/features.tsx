@@ -2,8 +2,21 @@ import { Card } from "./card";
 
 export default function features() {
   return (
-    <section>
-      <div className="md:my-[64px] mx-[100px] ">
+    <section className="md:my-[64px] mx-[100px] flex flex-col gap-[64px]">
+      <div className="flex flex-row items-center justify-between">
+        <figure>
+          <img
+            src="/images/frame-one.png"
+            alt="feature illustration"
+            draggable={false}
+            loading="lazy"
+          />
+        </figure>
+        div
+      </div>
+
+      {/*  */}
+      <div>
         <p className="font-lato font-normal text-[18px] leading-[21.6px] text-[#80879F]">
           What our customers says?
         </p>

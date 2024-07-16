@@ -23,7 +23,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="bg-[#2E5EFF] outline px-[24px] py-[32px] md:px-[120px]">
+    <footer className="bg-[#2E5EFF]` px-[24px] py-[32px] md:px-[120px]">
       <div className="flex flex-row items-center justify-between">
         <div className="flex flex-col">
           <figure>
