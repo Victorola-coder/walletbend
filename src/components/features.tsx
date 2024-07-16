@@ -12,7 +12,11 @@ export default function features() {
             loading="lazy"
           />
         </figure>
-        div
+        <div>
+          <h4 className="text-[#000F40] text-[20px] leading-[57.96px] font-medium text-right">
+            Get the full picture of your finances
+          </h4>
+        </div>
       </div>
 
       {/*  */}

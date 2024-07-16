@@ -1,3 +1,5 @@
+import Button from "./button";
+
 export default function Hero() {
   return (
     <section className="flex flex-col items-center mt-10 mx-[24px]_">
@@ -11,9 +13,7 @@ export default function Hero() {
           your bank accounts, credit cards.
         </p>
       </div>
-      <button className="bg-[#2E5EFF] mt-[32px] px-[24px] py-[12px] rounded-[30px] text-white font-semibold leading-[22px] text-base transition-all duration-300 active:scale-95">
-        Get Started Now
-      </button>
+      <Button>Get Started Now</Button>
 
       <figure className="block md:hidden mt-[28px] mx-0 md:mt-[64px] md:mx-[120px]">
         <img
