@@ -1,3 +1,4 @@
+import Button from "./button";
 import { Card } from "./card";
 
 export default function features() {
@@ -12,10 +13,19 @@ export default function features() {
             loading="lazy"
           />
         </figure>
-        <div>
-          <h4 className="text-[#000F40] text-[20px] leading-[57.96px] font-medium text-right">
+        <div className="flex flex-col items-end text-right">
+          <h4 className="font-kai text-[#000F40] text-[40px] leading-[57.96px] font-medium ">
             Get the full picture of your finances
           </h4>
+
+          <p className="font-lato font-normal text-[16px] leading-[24px] text-[#80879F] self-end max-w-[459px]">
+            Ditch the multiple apps and passwords. Wallet Blend is your one-stop
+            shop for all your banks. Track your spending, view balances, and
+            transfer money with just a few taps. It's the easiest way to manage
+            your money, stress-free.
+          </p>
+
+          <Button className="mt-[32px]">Get started</Button>
         </div>
       </div>
 
@@ -58,9 +68,7 @@ export default function features() {
             </span>
           </h4>
 
-          <button className="bg-[#2E5EFF] mt-[32px] px-[24px] py-[12px] rounded-[30px] text-white font-semibold leading-[22px] text-base transition-all duration-300 active:scale-95">
-            Get Started
-          </button>
+          <Button>Get Started</Button>
         </div>
 
         <img src="/images/link.png" alt="link" draggable={false} />

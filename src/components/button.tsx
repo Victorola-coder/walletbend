@@ -1,4 +1,10 @@
-export default function Button({ ...props }) {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  prop?: object;
+  className?: string;
+  children: React.ReactNode;
+}
+
+export default function Button({ ...props }: ButtonProps) {
   const { prop, className, children } = props;
   return (
     <button

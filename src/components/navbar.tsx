@@ -1,5 +1,6 @@
 import { useRef, useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from ".";
 
 interface NavlinkProps {
   title: string;
@@ -89,9 +90,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        <button className="hidden md:block bg-[#2E5EFF] px-[24px] py-[12px] rounded-[30px] text-white font-semibold leading-[22px] text-base transition-all duration-300 active:scale-95">
-          Download Our App
-        </button>
+        <Button>Download Our App</Button>
 
         {/* MOBILE NAV */}
         <div className="md:hidden" ref={navRef}>
