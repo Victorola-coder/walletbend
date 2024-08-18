@@ -1,9 +1,73 @@
 import Button from "./button";
 import { Card } from "./card";
+import { DataDriven } from "./svgs";
 
 export default function features() {
   return (
     <section className="md:my-[64px] mx-[100px] flex flex-col gap-[64px]">
+      {/* data driven  */}
+      <div className="flex flex-row items-center justify-between flex-1">
+        <div className=" rounded-[27.61px] mt-[32px] flex flex-col pl-[32px] pt-[32px]  bg-[#FFA158]">
+          <figure>
+            <DataDriven />
+          </figure>
+          <h4 className="text-white font-bold text-[40px] leading-[50px] font-kai max-w-[325px] ">
+            Data-Driven Insights for Financial Success
+          </h4>
+          {/* button and image */}
+          <div className="flex flex-row items-end gap-4">
+            <button className="bg-transparent border border-solid mb-[32px] transition-all duration-300 active:scale-95 border-white font-lato whitespace-nowrap text-[16px] px-[32px] py-[12px] md:py-[12px] md:px-[18px] leading-[22px] rounded-[12px] text-center outline-none text-[#ffffff] md:text-[16px] md:w-[118px] font-medium md:leading-[22px] md:rounded-[30px]">
+              Get Started
+            </button>
+            {/* image */}
+            <figure>
+              <img
+                src="/images/data-phone.png"
+                draggable={false}
+                className="w-[300px_] pr-[32px]"
+                alt="image illustration"
+              />
+            </figure>
+          </div>
+        </div>
+
+        {/* all your bank */}
+        <div className="bg-[#F5F5F4] pl-[36px] pb-[24px] rounded-[27.61px] flex flex-col gap-[63px]">
+          <figure>
+            <img
+              src="/images/banks.png"
+              alt="multiple_banks"
+              className=""
+              draggable={false}
+              loading="lazy"
+            />
+          </figure>
+
+          <h4 className="font-kai text-black font-bold text-[24px] leading-[35px] max-w-[242px] ">
+            All Your Bank Accounts. <br />
+            <span className="text-[#00000080]">One Simple App</span>
+          </h4>
+        </div>
+
+        {/* your finances*/}
+        <div className="bg-[#F5F5F4] pl-[36px] pb-[24px] rounded-[27.61px] flex flex-col gap-[63px]">
+          <figure>
+            <img
+              src="/images/banks.png"
+              alt="multiple_banks"
+              className=""
+              draggable={false}
+              loading="lazy"
+            />
+          </figure>
+
+          <h4 className="font-kai text-black font-bold text-[24px] leading-[35px] max-w-[242px] ">
+            All Your Bank Accounts. <br />
+            <span className="text-[#00000080]">One Simple App</span>
+          </h4>
+        </div>
+      </div>
+
       <div className="flex flex-row items-center justify-between">
         <figure>
           <img
