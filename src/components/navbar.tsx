@@ -81,6 +81,7 @@ export default function Navbar() {
                 <Link
                   onClick={() => setIsOpened(!isOpened)}
                   to={link.href}
+                  className="hover:text-[#000F40] transition-all duration-300"
                   replace={link.href === "/login"}
                 >
                   {link.title}

@@ -7,8 +7,9 @@ export default function features() {
       <div className="flex flex-row items-center justify-between">
         <figure>
           <img
-            src="/images/frame-one.png"
+            src="/images/yo.png"
             alt="feature illustration"
+            className="w-6500px] h-[500px] transition-all duration-300 hover:scale-105"
             draggable={false}
             loading="lazy"
           />
